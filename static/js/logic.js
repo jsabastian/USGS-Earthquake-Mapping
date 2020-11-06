@@ -1,5 +1,5 @@
 // Store our API endpoint inside queryUrl
-var queryUrl = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_month.geojson";
+var queryUrl = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/1.0_day.geojson";
 
 // Perform a GET request to the query URL
 d3.json(queryUrl, function(data) {
@@ -13,7 +13,7 @@ function createFeatures(earthquakeData) {
     if (mag <= 1) {
       return(1);
     } else if ((mag > 1) && (mag <= 2)) {
-      return(3);
+      return(2);
     } else if ((mag > 2) && (mag <= 3)) {
       return(6);
     } else if ((mag > 3) && (mag <= 4)) {
@@ -27,17 +27,17 @@ function createFeatures(earthquakeData) {
 
   function markerColor(mag) {
     if (mag <= 1) {
-      return("limegreen");
+      return('#ffffe0');
     } else if ((mag > 1) && (mag <= 2)) {
-      return("yellowgreen");
+      return('#ffff00');
     } else if ((mag > 2) && (mag <= 3)) {
-      return("orange");
+      return('#ff8c00');
     } else if ((mag > 3) && (mag <= 4)) {
-      return("darkorange");
+      return('#ff7f50');
     } else if ((mag > 4) && (mag <= 5)) {
-      return("chocolate");
+      return('#ff6347');
     } else {
-      return("darkred");
+      return('#ff4500');
     };
   }
 
