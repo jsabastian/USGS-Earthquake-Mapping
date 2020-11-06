@@ -1,0 +1,154 @@
+body {
+  margin-bottom: 150px;
+  background-color: rgba(255, 0, 0, 0.2);
+}
+.main-content {
+  padding: 25px;
+  margin-top: 30px;
+  background-color: #fff;
+}
+.main-content > p {
+  padding-top: 30px;
+  font-size: 20px;
+  line-height: 25px;
+  color: rgb(231, 117, 23);
+}
+
+#map
+{
+    width: 100px;
+    height:900px;
+    min-height: 100%;
+    min-width: 100%;
+    display: block;
+}
+
+.container-full {
+  max-width:60em;
+  padding: 0em;
+}
+
+.fill { 
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+}
+
+.description-text {
+  padding-bottom: 20px;
+}
+
+#description-image {
+  float: left;
+  width: 300px;
+  height: 200px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.sidemenu-block {
+  width: 100%;
+  padding: 25px 25px 35px;
+  margin-top: 30px;
+  background-color: #fff;
+}
+
+.description-header {
+  margin-bottom: 15px;
+  font-family: Georgia, Times, "Times New Roman", serif; 
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(231, 117, 23);
+}
+
+.sidemenu-header {
+  margin-bottom: 15px;
+  font-family: Georgia, Times, "Times New Roman", serif; 
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(231, 117, 23);
+}
+
+.sidemenu-photo {
+  width: 300px;
+  height: 210px;
+}
+
+.sidemenu-photo:hover {
+  opacity: 0.6;
+  border: 2px solid rgb(231, 117, 23);
+  
+}
+
+
+#images {
+  padding-top: 15px;
+  text-align: center;
+}
+
+.sidemenu-heatmap {
+  width: 100%;
+  padding: 15px 10px 5px;
+  margin-top: 30px;
+  background-color: #fff;
+}
+
+#image-heatmap {
+  padding-top: 5px;
+  text-align: center;
+}
+
+.heatmap-photo {
+  width: 250px;
+  height: 200px;
+}
+
+.comparison-image:hover {
+  opacity: 0.6;
+}
+
+.comparison-header {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(231, 117, 23);
+  text-align: center;
+}
+
+/* CSS from the Leaflet-Choropleth documentation */
+.legend {
+  padding: 6px 8px;
+  font: 12px Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #555;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.legend ul {
+  padding: 0;
+  margin: 0;
+  clear: both;
+  list-style-type: none;
+}
+
+.legend li {
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+}
+
+
+.legend {
+  line-height: 18px;
+  color: #555;
+}
+.legend i {
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin-right: 8px;
+  opacity: 0.7;
+}
